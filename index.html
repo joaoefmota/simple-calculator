@@ -3,15 +3,22 @@
 
 <body>
     <script>
+
         const firstValue = prompt("Introduce a number");
-        //const operator = prompt("Introduce an operator");
+        const operator = prompt("Introduce an operator");
         const secondValue = prompt("Introduce another number");
         const convFirstValue = parseInt(firstValue);
         const convSecondValue = parseInt(secondValue);
 
-
-
-        console.log((convFirstValue + convSecondValue));
+        if (operator === "+") {
+            console.log(convFirstValue + convSecondValue);
+        }
+        else if (operator === "-") {
+            console.log(convFirstValue - convSecondValue);
+        }
+        else {
+            console.log("Introduce an operator between + or -")
+        }
     </script>
 </body>
 
