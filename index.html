@@ -3,33 +3,58 @@
 
 <body>
     <script>
-        function awesomeCalculator() {
-            const firstValue = prompt("Introduce a number.");
-            const operator = prompt("Introduce an operator.");
-            const secondValue = prompt("Introduce another number.");
-            const convFirstValue = parseInt(firstValue);
-            const convSecondValue = parseInt(secondValue);
-            switch (operator) {
-                case "+":
-                    console.log(convFirstValue + convSecondValue);
-                    break;
-                case "-":
-                    console.log(convFirstValue - convSecondValue);
-                    break;
-                case "/":
-                    console.log(convFirstValue / convSecondValue);
-                    break;
-                case "*":
-                    console.log(convFirstValue * convSecondValue);
-                    break;
-                case "%":
-                    console.log(convFirstValue % convSecondValue);
-                    break;
-                default:
-                    console.log("Introduce a valid operator, beautiful person.")
+        const namePLayer = prompt("Whats your name, kind person?");
+        const random = Math.floor(Math.random() * 100 + 1);
+        let = guessNum = -1;
+        while (guessNum !== random) {
+            guessNum = parseInt(prompt("Guess a number between 1 and 100!"));
+            if (guessNum > random) {
+                console.log("It is less.")
+            }
+            else if (guessNum < random) {
+                console.log("It is more");
+            }
+            else {
+                console.log("You won!");
+                break;
             }
         }
-        awesomeCalculator();
+
+
+
+        /*
+
+
+
+        /*
+                function awesomeCalculator() {
+                    const firstValue = prompt("Introduce a number.");
+                    const operator = prompt("Introduce an operator.");
+                    const secondValue = prompt("Introduce another number.");
+                    const convFirstValue = parseInt(firstValue);
+                    const convSecondValue = parseInt(secondValue);
+                    switch (operator) {
+                        case "+":
+                            console.log(convFirstValue + convSecondValue);
+                            break;
+                        case "-":
+                            console.log(convFirstValue - convSecondValue);
+                            break;
+                        case "/":
+                            console.log(convFirstValue / convSecondValue);
+                            break;
+                        case "*":
+                            console.log(convFirstValue * convSecondValue);
+                            break;
+                        case "%":
+                            console.log(convFirstValue % convSecondValue);
+                            break;
+                        default:
+                            console.log("Introduce a valid operator, beautiful person.")
+                    }
+                }
+                awesomeCalculator();
+        */
     </script>
 </body>
 
