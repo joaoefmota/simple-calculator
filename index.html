@@ -3,45 +3,33 @@
 
 <body>
     <script>
-
-        const firstValue = prompt("Introduce a number");
-        const operator = prompt("Introduce an operator");
-        const secondValue = prompt("Introduce another number");
-        const convFirstValue = parseInt(firstValue);
-        const convSecondValue = parseInt(secondValue);
-
-        switch (operator) {
-            case "+":
-                console.log(convFirstValue + convSecondValue);
-                break;
-            case "-":
-                console.log(convFirstValue - convSecondValue);
-                break;
-            case "/":
-                console.log(convFirstValue / convSecondValue);
-                break;
-            case "*":
-                console.log(convFirstValue * convSecondValue);
-                break;
-            default:
-                console.log("Introduce a valid operator.")
+        function awesomeCalculator() {
+            const firstValue = prompt("Introduce a number.");
+            const operator = prompt("Introduce an operator.");
+            const secondValue = prompt("Introduce another number.");
+            const convFirstValue = parseInt(firstValue);
+            const convSecondValue = parseInt(secondValue);
+            switch (operator) {
+                case "+":
+                    console.log(convFirstValue + convSecondValue);
+                    break;
+                case "-":
+                    console.log(convFirstValue - convSecondValue);
+                    break;
+                case "/":
+                    console.log(convFirstValue / convSecondValue);
+                    break;
+                case "*":
+                    console.log(convFirstValue * convSecondValue);
+                    break;
+                case "%":
+                    console.log(convFirstValue % convSecondValue);
+                    break;
+                default:
+                    console.log("Introduce a valid operator, beautiful person.")
+            }
         }
-
-
-
-
-
-
-
-        /*if (operator === "+") {
-            console.log(convFirstValue + convSecondValue);
-        }
-        else if (operator === "-") {
-            console.log(convFirstValue - convSecondValue);
-        }
-        else {
-            console.log("Introduce an operator between + or -")
-        }*/
+        awesomeCalculator();
     </script>
 </body>
 
