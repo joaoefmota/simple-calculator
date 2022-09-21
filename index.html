@@ -10,7 +10,30 @@
         const convFirstValue = parseInt(firstValue);
         const convSecondValue = parseInt(secondValue);
 
-        if (operator === "+") {
+        switch (operator) {
+            case "+":
+                console.log(convFirstValue + convSecondValue);
+                break;
+            case "-":
+                console.log(convFirstValue - convSecondValue);
+                break;
+            case "/":
+                console.log(convFirstValue / convSecondValue);
+                break;
+            case "*":
+                console.log(convFirstValue * convSecondValue);
+                break;
+            default:
+                console.log("Introduce a valid operator.")
+        }
+
+
+
+
+
+
+
+        /*if (operator === "+") {
             console.log(convFirstValue + convSecondValue);
         }
         else if (operator === "-") {
@@ -18,7 +41,7 @@
         }
         else {
             console.log("Introduce an operator between + or -")
-        }
+        }*/
     </script>
 </body>
 
